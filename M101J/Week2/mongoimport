@@ -1,0 +1,1 @@
+mongoimport --host localhost:27017 --username rich --password 1234 --authenticationDatabase admin -d students -c grades < /Users/rich/Downloads/grades.json

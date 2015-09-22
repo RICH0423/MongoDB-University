@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.10gen</groupId>
+    <artifactId>M101J-week2</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>M101J Week 2</name>
+    <url>http://maven.apache.org</url>
+
+    <dependencies>
+        <!-- use for 2.x code  comment otherwise -->
+        <!--<dependency>-->
+            <!--<groupId>org.mongodb</groupId>-->
+            <!--<artifactId>mongo-java-driver</artifactId>-->
+            <!--<version>2.10.1</version>-->
+        <!--</dependency>-->
+
+        <!-- use for 3.x code comment otherwise -->
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
+    </dependencies>
+</project>

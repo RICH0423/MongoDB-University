@@ -1,0 +1,146 @@
+1. $SUM
+db.zips.aggregate([{"$group":{"_id":"$state", "population":{$sum:"$pop"}}}])
+
+db.products.aggregate([
+    {$group:
+     {
+   _id: {
+       "maker":"$manufacturer"
+   },
+   sum_prices:{$sum:"$price"}
+     }
+    }
+])
+
+2. $AVG
+use agg
+db.products.aggregate([
+    {$group:
+     {
+   _id: {
+       "category":"$category"
+   },
+   avg_price:{$avg:"$price"}
+     }
+    }
+])
+
+db.zips.aggregate([
+    {$group:
+     {
+   _id: {
+       "state":"$state"
+   },
+   avg_pop:{$avg:"$pop"}
+     }
+    }
+])
+
+3. $addToSet
+db.products.aggregate([
+    {$group:
+     {
+   _id: {
+       "maker":"$manufacturer"
+   },
+   categories:{$addToSet:"$category"}
+     }
+    }
+])
+
+4. $push
+db.products.aggregate([
+    {$group:
+     {
+   _id: {
+       "maker":"$manufacturer"
+   },
+   categories:{$push:"$category"}
+     }
+    }
+])
+
+5. $Max
+db.products.aggregate([
+    {$group:
+     {
+   _id: {
+       "maker":"$manufacturer"
+   },
+   maxprice:{$max:"$price"}
+     }
+    }
+])
+
+6. Double group
+db.grades.aggregate([
+    {"$unwind":"$scores"},
+    { "$match" : { "scores.type" : { "$ne" : "quiz"} } },
+    {"$group": {_id:{class_id:"$class_id", student_id:"$student_id"}, "average":{$avg:"$scores.score"}}
+    },
+    {"$group":{_id:"$_id.class_id", "average":{"$avg":"$average"}}},
+    { "$sort": { "average": -1 } }
+    ])
+
+7. Sort
+db.zips.aggregate([
+    {$match:
+     {
+   state:"NY"
+     }
+    },
+    {$group:
+     {
+   _id: "$city",
+   population: {$sum:"$pop"},
+     }
+    },
+    {$project:
+     {
+   _id: 0,
+   city: "$_id",
+   population: 1,
+     }
+    },
+    {$sort:
+     {
+   population:-1
+     }
+    }
+     
+])
+
+8. limit & skip
+
+use agg
+db.zips.aggregate([
+    {$match:
+     {
+   state:"NY"
+     }
+    },
+    {$group:
+     {
+   _id: "$city",
+   population: {$sum:"$pop"},
+     }
+    },
+    {$project:
+     {
+   _id: 0,
+   city: "$_id",
+   population: 1,
+     }
+    },
+    {$sort:
+     {
+   population:-1
+     }
+    },
+    {$skip: 10},
+    {$limit: 5}
+])
+
+
+
+
