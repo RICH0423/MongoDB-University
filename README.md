@@ -1,6 +1,6 @@
 # MongoDB-University
 
-[![Alt Text](https://github.com/RICH0423/MongoDB-University/blob/master/MongoDB_university.png "MongoDB University")](https://www.mongodb.org/ "MongoDB University")
+[![Alt Text](https://github.com/RICH0423/MongoDB-University/blob/master/MongoDB_university.png "MongoDB University")](https://university.mongodb.com/ "MongoDB University")
 
 #####This project contains course materials and homework assignments for "MongoDB University Courses".#####
 * [MongoDB University Courses](https://university.mongodb.com/courses)
