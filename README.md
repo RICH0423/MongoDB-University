@@ -32,7 +32,7 @@
 
 ##M102: MongoDB for DBAs
 
-[Certificate](https://s3.amazonaws.com/edu-cert.10gen.com/downloads/b84f0eadf83e4cbe88a8f0cfb5a22b0c/Certificate.pdf?_ga=1.226750942.2135017449.1433236738)
+[Certificate](http://university.mongodb.com/course_completion/b84f0eadf83e4cbe88a8f0cfb5a22b0c)
 
 ######Technologies and software used:######
 * [MongoDB](http://www.mongodb.org/)
@@ -46,3 +46,25 @@
 * Week 5: Replication, Part 2
 * Week 6: Scalability
 * Week 7: Backup and Recovery
+
+---------------
+
+##M101P: MongoDB for Developers (Python)
+
+[Certificate](http://university.mongodb.com/course_completion/a76d35e508d544cbbaedc7bb2c1b0816)
+
+######Technologies and software used:######
+* [MongoDB](http://www.mongodb.org/)
+* [Python 2](https://www.python.org/)
+* [pymongo](https://api.mongodb.org/python/current/)
+* [Bottle - Python Web Framework](http://bottlepy.org/docs/dev/index.html)
+
+######Agenda
+* Week 1: Introduction and Overview
+* Week 2: Creating, Reading and Updating Data (CRUD)
+* Week 3: Schema Design
+* Week 4: Performance
+* Week 5: Aggregation Framework
+* Week 6: Application Engineering
+* Week 7: Case Studies
+
