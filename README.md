@@ -1,5 +1,6 @@
 # MongoDB-University
-[![Alt Text](https://github.com/RICH0423/MongoDB-University/blob/master/MongoDB.png "Image Title (optional)")](https://www.mongodb.org/ "MongoDB")
+
+[![Alt Text](https://github.com/RICH0423/MongoDB-University/blob/master/MongoDB_university.png "MongoDB University")](https://university.mongodb.com/ "MongoDB University")
 
 #####This project contains course materials and homework assignments for "MongoDB University Courses".#####
 * [MongoDB University Courses](https://university.mongodb.com/courses)
@@ -7,7 +8,7 @@
 ---------------
 ##M101J: MongoDB for Java Developers
 
-[Certificate]
+[Certificate](http://university.mongodb.com/course_completion/de9110183d6145d69d3c245846e2ffe8)
 
 ######Technologies and software used:######
 * [Java SE 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
